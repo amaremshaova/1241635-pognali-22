@@ -297,17 +297,28 @@
                         Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу
                         несколько.</p>
                     <form class="step-2__form">
-                        <select class="step-2__counties-select">
-                            <option>Босния и Герцеговина</option>
-                            <img src="img/index/bosnia-and-herzegovina-flag.jpg" width="35" height="24" alt="Флаг Боснии и Герцеговины">
-                        </select>
-                        <select class="step-2__counties-select">
-                            <option>Чехия</option>
+                        <div class="step-2__option-container">
+                            <img
+                                src="img/index/bosnia-and-herzegovina-flag.jpg"
+                                width="35"
+                                height="24"
+                                alt="Флаг Боснии и Герцеговины">
+                            <select class="step-2__counties-select">
+                                <option>Босния и Герцеговина</option>
+                            </select>
+                        </div>
+
+                        <div class="step-2__option-container">
                             <img src="img/index/czech-flag.jpg" width="35" height="24" alt="Флаг Чехии">
-                        </select>
+                            <select class="step-2__counties-select">
+                                <option>Чехия</option>
+                            </select>
+                        </div>
+
                         <select class="step-2__counties-select">
                             <option>Выберите страну</option>
                         </select>
+
                         <select class="step-2__counties-select">
                             <option disabled="disabled">Добавить страну</option>
                         </select>
