@@ -1,0 +1,62 @@
+.edit-interest-tags {
+    position: relative;
+
+    @media (min-width: @tablet-width) {
+        order: 5;
+    }
+}
+
+.edit-interest-tags__wrapper {
+    margin-bottom: 22px;
+
+}
+
+.edit-interest-tags__textarea {
+    all: unset;
+    width: 270px;
+    height: 90px;
+    border-radius: 10px;
+
+    padding: 24px 16px 7px 22px;
+    box-sizing: border-box;
+
+    border: 2px solid @border-textarea-color;
+
+    font-size: 16px;
+    line-height: 18px;
+    color: @special-grey;
+
+    @media (min-width: @tablet-width) {
+        width: 618px;
+        height: 94px;
+        padding: 31px 38px 31px 38px;
+
+        font-size: 20px;
+        line-height: 22px;
+    }
+}
+
+.edit-interest-tags__label {
+    width: 82px;
+    height: 17px;
+    position: absolute;
+
+    top: -7px;
+    left: 93px;
+    background-color: @special-blue-light;
+
+    font-weight: 700;
+
+    font-size: 16px;
+    line-height: 18px;
+    color: @basic-blue-light;
+    text-align: center;
+
+    @media(min-width: @tablet-width) {
+        font-size: 20px;
+        line-height: 20px;
+
+        top: 84px;
+        left: 265px;
+    }
+}

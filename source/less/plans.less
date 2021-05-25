@@ -1,0 +1,160 @@
+
+.plans {
+    background-color: @plans-background-color;
+    border-radius: 30px 30px 0 0;
+}
+
+.plans__wrapper {
+    margin: 0 auto;
+    width: 270px;
+    margin-top: -55px;
+    padding: 5px 10px 76px 11px;
+
+    @media(min-width: @tablet-width) {
+        width: 618px;
+        padding: 23px 10px 124px 11px;
+    }
+}
+
+.plans-title {
+    margin-bottom: 28px;
+    color: @basic-blue-light;
+
+    @media(min-width: @tablet-width) {
+        font-size: 36px;
+        line-height: 36px;
+
+        margin-bottom: 52px;
+    }
+}
+
+.plans__list {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.plans__item {
+    width: 270px;
+    height: 154px;
+    background-color: @basic-white;
+    border-radius: 10px;
+    padding: 6px 20px 14px 24px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+    @media(min-width: @tablet-width) {
+        width: 618px;
+        height: 152px;
+        padding: 13px 33px 14px 39px;
+    }
+}
+
+.plans__item-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: @basic-blue-light;
+
+    margin-bottom: 21px;
+
+    @media(min-width: @tablet-width) {
+        font-size: 24px;
+        line-height: 24px;
+
+        display: flex;
+        justify-content: space-between;
+        order: 1;
+
+        margin-bottom: 34px;
+    }
+}
+
+.plans__item-title span {
+    @media(min-width: @tablet-width) {
+        order: 2;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+
+        margin-top: 6px;
+    }
+}
+
+.plans__item-container {
+    @media (min-width: @tablet-width) {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 0px;
+        width: 538px;
+
+        border-top: 1px solid rgba(@border-textarea-color, 0.3);
+    }
+}
+
+.plans__number-fellow-travelers {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: @basic-blue-light;
+
+    margin: 0 0 5px 2px;
+
+    @media (min-width: @tablet-width) {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        color: @basic-blue-light;
+    }
+}
+
+.plans__date-trips {
+    color: @basic-blue-light;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    margin: 0 0 21px 2px;
+
+    @media (min-width: @tablet-width) {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        color: @basic-blue-light;
+        width: 219px;
+
+    }
+
+}
+
+.plans__edit-button {
+    all: unset;
+    margin-left: 2px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+
+    text-transform: uppercase;
+
+    color: @black-color;
+    opacity: 0.3;
+
+    @media (min-width: @tablet-width) {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        width: 106px;
+    }
+}

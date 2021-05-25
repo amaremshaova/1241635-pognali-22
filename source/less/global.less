@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  src: url("../fonts/bloggersans-bold.woff2") format("woff2"), url("../fonts/bloggersans-bold.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  src: url("../fonts/bloggersans-medium.woff2") format("woff2"), url("../fonts/bloggersans-medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  src: url("../fonts/bloggersans-light.woff2") format("woff2"), url("../fonts/bloggersans-light.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  src: url("../fonts/bloggersans.woff2") format("woff2"), url("../fonts/bloggersans.woff") format("woff");
+  font-weight: 400;
+}
+
+// Viewports
+
+@tablet-width: 768px;
+@desktop-width: 1440px;
+@mobile-width-only: 767px;
+
+  @basic-white: #ffffff;
+  @basic-blue: #161C35;
+  @special-orange: #FF8D30;
+  @special-orange-2: #FFA530;
+  @special-grey: #444444;
+  @black-color: #000000;
+  @basic-blue-light:  #1D2E5B;
+  @offline-icon-background: #F97676;
+  @online-icon-background: #81E31E;
+  @transport-active-icon-background: #101D41;
+  @special-yellow-dark: #FFBD30;
+  @basic-yellow: #FFD74B;
+  @special-blue: #132576;
+  @blue-background-color: #182044;
+  @icon-background:#121936;
+  @link-color:#192144;
+  @grey-light: #D6DAED;
+  @light-background-color:#EDEFF6;
+  @light-btn-backgound-color: #F3F4F8;
+  @shadow-color: rgba(29, 46, 91, 0.18);
+  @close-color: #CCCCCC;
+  @active-btn-color: rgba(0, 0, 0 , 0.3);
+  @light-background-color-2: #E2E5F2;
+  @dark-background-blue: #141B3B;
+  @light-background-border: #E1E3E9;
+  @level-background-color: rgba(0, 0, 0 , 0.6);
+  @form-btn-background-color: #DFE3F0;
+
+  @special-blue-light:  #EDEFF6;
+  @border-textarea-color: #CBCED9;
+  @plans-background-color: #DFE3F0;
+  @adding-plans-background-color:#D4D9EB;
+  @border-color: #D6D9E6;
+  @border-cursor-color: #FF5C23;
+  @checkbox-hover-color: #959BB2;
+  @checkbox-disabled-color: #E2E5F1;
+  @cross-icon-color: #AFB0B5;
+  @border-filter-color: #F3C72B;
+  @transport-btn-off-color: #D9D9D9;
+  @transport-btn-off-hover-color: #B2B2B2;
+
+  @catalog-background-color: #E5E5E5;
+  @like-color: #F02323;
+  @like-background-color: #F9EAEA;
+  @like-hover-background-color: #F9D8D8;
+  @phone-hover-color: #F26926;
+  @error-form: #FF0000;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body{
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  margin: 0;
+  min-width: 320px;
+  display: flex;
+	flex-direction: column;
+	height: 100%;
+
+}
+
+.wrap {
+  margin: 0 auto;
+  padding: 0 25px;
+
+  @media (min-width: @tablet-width){
+    padding: 0 40px;
+  }
+
+  @media (min-width: @desktop-width){
+    padding: 0 60px;
+  }
+}

@@ -1,0 +1,145 @@
+.page-main {
+    width: 100%;
+    margin-top: -512px;
+    background-color: @basic-blue;
+
+    background-image: url("../img/index/globe-back-mobile.jpg");
+    background-position: 0 -57px;
+    background-repeat: no-repeat;
+    background-size: 100vw 569px;
+
+    &::after{
+      content: "";
+       position: absolute;
+       top: 223px;
+       left: 25%;
+       width: 372px;
+       height: 451px;
+      background-image:  url("../img/index/traveller-illustration-mobile.png");
+      background-repeat: no-repeat;
+    }
+
+    /*@media (min-resolution: 2dppx) {
+      background: url("../img/index/globe-back-mobile@2x.jpg") 0 90px no-repeat,
+      url("../img/index/traveller-illustration-mobile@2x.png") 80px 222px no-repeat;
+    }*/
+
+    @media (min-width: @tablet-width) {
+        background-color: @blue-background-color;
+        background-position: 98% 49px;
+        background-image: url("../img/index/globe-back-tablet.jpg");
+        background-repeat: no-repeat;
+        background-position:  0 326px;
+        background-size: 100vw 612px;
+
+        &::after{
+          content: "";
+           position: absolute;
+           top: 404px;
+           left: 37%;
+           width: 372px;
+           height: 451px;
+          background-image:  url("../img/index/traveller-illustration-tablet.png");
+          background-repeat: no-repeat;
+        }
+
+        /* @media (min-resolution: 2dppx) {
+        background: url("../img/index/globe-back-tablet@2x.jpg") 0 90px no-repeat,
+        url("../img/index/traveller-illustration-tablet@2x.png") 80px 222px no-repeat;
+      }*/
+
+    }
+
+    @media (min-width: @desktop-width){
+      margin-top: -540px;
+      background-color: @blue-background-color;
+      background-image: url("../img/index/globe-back-desktop.png");
+      background-repeat: no-repeat;
+      background-position: 0 -56px;
+         background-size: 100vw 750px;
+
+         &::after{
+           content: "";
+           position: absolute;
+           top: 110px;
+           left: 604px;
+           width: 431px;
+           height: 640px;
+          background-image: url("../img/index/traveller-illustration-desktop.png");
+          background-repeat: no-repeat;
+         }
+    }
+
+}
+
+.page-main__text-wrapper {
+  width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width){
+    width: 688px;
+  }
+
+    @media (min-width: @desktop-width) {
+        display: flex;
+        justify-content: space-between;
+        padding: 149px 83px 107px 128px;
+    }
+
+}
+
+.page-main__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    margin: 35px 16px 265px;
+
+    color: @basic-white;
+
+    @media (min-width: @tablet-width) {
+        font-size: 60px;
+        line-height: 70px;
+        margin: 100px 134px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+        text-align: left;
+        margin: 0;
+        width: 420px;
+    }
+}
+
+.page-main__quote-wrapper {
+    padding: 48px 74px 15px 26px;
+    color: @basic-white;
+
+    @media (min-width: @tablet-width) {
+        padding: 90px 376px 215px 33px;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding: 13px 0 0;
+        width: 264px;
+    }
+}
+
+.page-main__quote {
+    display: block;
+    margin-bottom: 18px;
+    @media (min-width: @tablet-width) {
+        margin-bottom: 45px;
+    }
+}
+
+.page-main__cite {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 21px;
+        line-height: 25px;
+    }
+}

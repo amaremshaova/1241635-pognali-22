@@ -1,0 +1,121 @@
+.page-footer {
+    margin-top: -32px;
+}
+
+.page-footer__social-copyright-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: @basic-white;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    z-index: 10000;
+    height: 128px;
+
+    @media (min-width: @desktop-width) {
+        padding: 75px 60px 0 58px;
+    }
+}
+
+.page-footer__social {
+    position: relative;
+    z-index: 3;
+    background-color: @basic-white;
+    padding: 20px 93px;
+    width: 135px;
+    margin: 0 auto;
+
+    @media (min-width: @desktop-width) {
+        width: 186px;
+    }
+}
+
+.page-footer__copyright {
+    background-color: @basic-white;
+    width:100%;
+
+
+    @media (min-width: @desktop-width) {
+        width: 155px;
+    }
+
+}
+
+.page-footer__copyright-text{
+  color: @special-grey
+}
+
+.page-footer__copyright-wrapper {
+    margin: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #F2F2F2;
+    padding-top: 13px;
+
+
+    @media (min-width: @desktop-width) {
+      font-size: 20px;
+      line-height: 20px;
+
+      margin: 0;
+      padding-bottom: 0;
+      padding-top: 12px;
+  }
+}
+
+.page-footer__copyright-logo-icon{
+  fill: @link-color
+}
+
+.page-footer__copyright-logo-link{
+  cursor: pointer;
+  display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.page-footer__copyright-logo-link:hover span{
+    color: rgba(@special-grey, 0.6);
+}
+
+.page-footer__copyright-logo-link:hover svg{
+  fill: rgba(@link-color, 0.6);
+}
+
+.page-footer__copyright-logo-link:active span{
+  color: rgba(@special-grey, 0.3);
+}
+
+.page-footer__copyright-logo-link:active svg{
+  fill: rgba(@link-color, 0.3);
+}
+
+.page-footer__copyright-text {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 8px;
+
+    color: @special-grey;
+
+    @media (min-width: @desktop-width) {
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 2px;
+    }
+
+}
+
+.page-footer__logo{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 37px;
+  padding: 0 110px;
+}
+
+
+.page-footer__logo picture{
+  width: 96px;
+    margin: 0 auto;
+    display: block;
+}

@@ -1,0 +1,27 @@
+.show-all-button {
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+
+    background-color: @basic-yellow;
+    color: @basic-blue-light;
+
+    &:hover{
+      background-color: @special-yellow-dark;
+    }
+
+    &:active{
+      color: rgba(@basic-blue-light, 0.3);
+    }
+
+    @media (min-width: @tablet-width) {
+        border-radius: 20px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+}
