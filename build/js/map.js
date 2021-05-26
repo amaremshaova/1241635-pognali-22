@@ -1,1 +1,0 @@
-var myMap;function init(){myMap=new ymaps.Map("yandex-map",{center:[59.937468,30.322623],zoom:15}),myPlacemark=new ymaps.Placemark([59.938635,30.323118],{hintContent:"Собственный значок метки"},{iconLayout:"default#image",iconImageHref:"img/index/icon-map.svg",iconImageSize:[41,41]}),myMap.geoObjects.add(myPlacemark)}ymaps.ready(init);
