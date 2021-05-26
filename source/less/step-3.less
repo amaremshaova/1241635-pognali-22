@@ -1,0 +1,211 @@
+.step-3 {
+    background-color: @basic-white;
+    border-radius: 10px;
+
+    @media (min-width: @tablet-width){
+      border-radius: 30px;
+    }
+}
+
+.step-3__wrapper {
+    padding: 5px 26px 10px 24px;
+    margin-bottom: 43px;
+
+    @media (min-width: @tablet-width){
+      padding: 14px 23px 10px 44px;
+    }
+}
+
+.step-3__title {
+    font-size: 20px;
+    line-height: 20px;
+    color: @basic-blue-light;
+
+    @media (min-width: @tablet-width) {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 36px;
+    }
+}
+
+.step-3__text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 25px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 37px;
+    }
+}
+
+.step-3__form{
+  border-top: 1px solid @border-textarea-color;
+
+  @media (min-width: @tablet-width){
+    margin-top: 34px;
+  }
+
+}
+
+.step-3__form-item{
+  position: relative;
+
+  &:before{
+    content: "";
+    width: 2px;
+    height: calc(100% + 2px);
+    top: 10px;
+    left: -12px;
+    position: absolute;
+    background-color: @basic-blue-light;
+  }
+}
+
+.step-3__entertainments-label-container{
+  position: relative;
+  &:before{
+    content:"";
+    position: absolute;
+    top: 8px;
+    left: -2px;
+    width: 6px;
+    height:6px;
+    border-radius: 50%;
+    background-color: @basic-blue-light;
+  }
+
+  &:after{
+    content:"";
+    position: absolute;
+    top: 10px;
+    left: -12px;
+    width: 11px;
+    height:2px;
+    border-radius: 50%;
+    background-color: @basic-blue-light;
+  }
+}
+
+.step-3__entertainments-label {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: @basic-blue-light;
+    margin-bottom: 18px;
+    margin-left: 12px;
+    display: block;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 72px;
+        height: 24px;
+        background-image: url("../img/index/step-3-fade-mobile.png");
+        position: absolute;
+        top: -3px;
+        left: 131px;
+    }
+
+    @media (min-width: @tablet-width) {
+        font-size: 30px;
+        line-height: 30px;
+        margin-left: 0px;
+        margin-top: 30px;
+        padding-top: 31px;
+      }
+
+        &::before{
+          content: none;
+        }
+    }
+
+
+.step-3__entertainments-label-container picture{
+  z-index: 100;
+  margin-top: -3px;
+}
+
+.step-3__entertainments-label-1 {
+
+    &::after {
+        content: "";
+        width: 35px;
+        height: 24px;
+        background-image: url("../img/index/bosnia-and-herzegovina-flag.png");
+        position: absolute;
+        top: -3px;
+        left: 174px;
+    }
+}
+
+.step-3__entertainments-label-2 {
+    &::after {
+        content: "";
+        width: 35px;
+        height: 24px;
+        background-image: url("../img/index/czech-flag.png");
+        position: absolute;
+        top: -3px;
+        left: 174px;
+    }
+}
+
+.step-3__entertainments-text {
+    all: unset;
+    border: 1px solid @border-textarea-color;
+    width: 220px;
+    height: 220px;
+    padding: 10px 14px;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-size: 16px;
+    line-height: 22px;
+    color: @special-grey;
+
+    margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+        width: 500px;
+        height: 141px;
+
+        font-size: 20px;
+        line-height: 23px;
+
+        margin-top: 22px;
+
+        margin-bottom: 43px;
+    }
+}
+
+.step-3__buttons-container{
+
+  @media (min-width: @tablet-width) {
+
+    width: 537px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+}
+
+.step-3__submit-button {
+    margin-top: -2px;
+    padding: 5px 67px;
+    width: 230px;
+
+
+    @media (min-width: @tablet-width) {
+      width: 286px;
+      height: 80px;
+
+      font-size: 20px;
+      line-height: 23px;
+
+      box-sizing: border-box;
+  }
+
+}

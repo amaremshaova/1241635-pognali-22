@@ -1,0 +1,158 @@
+.contacts-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 19px;
+    margin-bottom: 29px;
+    width: 270px;
+
+    @media (min-width: @tablet-width){
+      width: 399px;
+      margin-top: 41px;
+      margin-bottom: 0;
+    }
+}
+
+.contacts-list__icon-wrapper{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  background-color: @icon-background;
+
+  @media(min-width: @tablet-width){
+    width: 68px;
+    height: 68px;
+  }
+
+  @media(min-width: @desktop-width){
+    width: 90px;
+    height: 90px;
+    margin-right: 31px;
+  }
+}
+
+.contacts-list__icon-wrapper--yellow:hover svg{
+  fill:   @special-yellow-dark;
+}
+
+.contacts-list__icon-wrapper--yellow:active svg{
+  fill: rgba(@special-yellow-dark, 0.3);
+}
+
+.contacts-list__item{
+  display: flex;
+
+  @media (min-width: @desktop-width){
+    justify-content: space-between;
+  }
+}
+
+.contacts-list__item:hover a{
+  color: @special-yellow-dark;
+}
+
+
+.contacts-list__item:hover svg{
+  fill: @special-yellow-dark;
+}
+
+.contacts-list__item:active a{
+  color: rgba(@special-yellow-dark, 0.3)
+}
+
+.contacts-list__item:active svg{
+  fill: rgba(@special-yellow-dark, 0.3)
+}
+
+.contacts-list__item:nth-child(1){
+  @media (min-width: @desktop-width){
+    margin-right: 110px;
+  }
+}
+
+.contacts-list__phone-icon{
+  margin: 14px 13.5px;
+  fill: @basic-yellow;
+
+  @media (min-width: @tablet-width){
+
+    width: 27.2px;
+    height: 25.69px;
+
+    margin: 20px 19.5px
+  }
+
+  @media (min-width: @desktop-width){
+    width: 36px;
+    height: 34px;
+
+    margin: 26px 26.5px
+  }
+}
+
+.contacts-list__email-icon{
+  margin-top: 17.25px;
+  margin-left: 14.11px;
+  fill: @basic-yellow;
+
+  @media (min-width: @tablet-width){
+
+    width: 27.2px;
+    height: 25.69px;
+
+    margin: 22px 20.5px
+  }
+
+  @media (min-width: @desktop-width){
+    width: 36.56px;
+    height: 25px;
+    margin: 33px 29.5px
+  }
+}
+
+.contacts-list__email--blue,
+.contacts-list__phone--blue {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: @link-color;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    margin-left: 16px;
+    margin-top: 14px;
+}
+
+.contacts-list__email--yellow,
+.contacts-list__phone--yellow {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: @basic-yellow;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    margin-left: 16px;
+    margin-top: 13px;
+
+
+
+    @media (min-width: @tablet-width){
+      font-size: 28px;
+line-height: 28px;
+
+margin-top: 20px;
+    margin-left: 21px;
+    }
+
+
+  @media (min-width: @desktop-width){
+    margin-left: 0;
+    margin-top: 30px
+  }
+}

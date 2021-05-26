@@ -1,0 +1,360 @@
+.adding-personal-profile {
+    background-color: @light-background-color;
+    position: relative;
+    z-index: 7;
+    border-radius: 0 0 25px 25px;
+    margin-top: -53px;
+
+    @media(min-width: @tablet-width) {
+        margin-top: -61px;
+        border-radius: 0 0 58px 58px;
+    }
+
+    @media(min-width: @desktop-width) {}
+}
+
+.adding-personal-profile__wrapper {
+  padding: 90px 2px 38px 24px;
+    width: 270px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @media(min-width: @tablet-width) {
+      width: 688px;
+      padding: 129px 40px 87px 0px;
+    }
+
+    @media(min-width: @desktop-width) {
+      width: 1320px;
+        padding: 163px 234px 188px 71px;
+    }
+}
+
+.adding-personal-profile__title-wrapper {
+    display: flex;
+    margin-bottom: 25px;
+    width: 107px;
+
+    @media (min-width: @tablet-width) {
+        margin-bottom: 77px;
+        width: 100%;
+    }
+
+    @media(min-width: @desktop-width) {
+        margin-bottom: 135px;
+        margin-left: 81px;
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            border-radius: 20px;
+            top: 294px;
+            right: 243px;
+            width: 446px;
+            height: 300px;
+            background-color: @light-background-color-2;
+
+        }
+    }
+}
+
+.adding-personal-profile__title {
+    margin-top: 14px;
+
+    @media(min-width: @tablet-width) {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    @media(min-width: @desktop-width) {
+      margin-left: 103px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.adding-personal-profile__rates-list {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    position: relative;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -130px;
+      right: -1px;
+      background-image: url("../img/index/rates-mobile.png");
+      background-repeat: no-repeat;
+      background-size: 100px 100px;
+      width: 100px;
+      height: 100px;
+  }
+
+    @media(min-width: @tablet-width) {
+        position: relative;
+        z-index: 100;
+        margin: 0 auto 55px;
+        width: 684px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 220px;
+            right: 44px;
+            background-image: url("../img/index/rates-desktop.png");
+            background-repeat: no-repeat;
+            background-size: 100px 100px;
+            width: 100px;
+            height: 100px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          border-radius: 20px;
+          top: -37px;
+          right: -4px;
+          width: 198px;
+          height: 285px;
+          z-index: -1;
+          background-color: @light-background-color-2;
+
+      }
+    }
+
+    @media(min-width: @desktop-width) {
+        width: 905px;
+        margin: 0;
+        margin-bottom: 54px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            right: -273px;
+            background-image: url("../img/index/rates-desktop.png");
+            background-repeat: no-repeat;
+            background-size: 198px 198px;
+            width: 198px;
+            height: 198px;
+
+        }
+    }
+
+}
+
+.adding-personal-profile__rates-item {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: @special-grey;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        height: 68px;
+    }
+}
+
+.adding-personal-profile__rates-text-wrapper {
+  border-bottom: 1px solid @light-background-border;
+  padding: 12px 0 15px 0;
+  width: 203px;
+  box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+        display: flex;
+        justify-content: space-between;
+        order: 2;
+        width: 564px;
+        margin-left: 21px;
+    }
+
+    @media(min-width: @desktop-width) {
+        width: 838px;
+        margin-left: 24px;
+    }
+}
+
+.adding-personal-profile__rates-item:first-child .adding-personal-profile__rates-text-wrapper {
+  border-top: 1px solid @light-background-border;
+}
+
+.adding-personal-profile__rates-text {
+    margin: 0 20px 0 0;
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        font-size: 28px;
+        line-height: 28px;
+        order: 2;
+        margin-top: 18px;
+    }
+
+    @media(min-width: @desktop-width) {
+        margin-top: 19px;
+    }
+}
+
+.adding-personal-profile__rates-item:nth-child(3) .adding-personal-profile__rates-text-wrapper {
+    @media(min-width: @desktop-width) {
+        margin-bottom: 4px;
+    }
+}
+
+.adding-personal-profile__rates-item:nth-child(3) .adding-personal-profile__rates-text {
+    @media(min-width: @desktop-width) {
+        margin-top: 16px;
+    }
+}
+
+.adding-personal-profile__rates-item:nth-child(3) .adding-personal-profile__rates-price {
+    @media(min-width: @desktop-width) {
+        margin-top: 16px;
+    }
+}
+
+.adding-personal-profile__rates-price {
+    display: block;
+    margin-top: 6px;
+
+    @media (min-width: @tablet-width) {
+        order: 3;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+
+    @media(min-width: @desktop-width) {
+        margin-top: 20px;
+    }
+}
+
+.adding-personal-profile__rates-img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 4px;
+    padding-top: 9px;
+    box-sizing: border-box;
+
+    @media(min-width: @tablet-width) {
+        width: 68px;
+        height: 68px;
+        order: 1;
+        font-size: 28px;
+        line-height: 28px;
+        padding-top: 19px;
+        margin-top: 0;
+    }
+
+    @media(min-width: @desktop-width) {
+        padding-top: 18px;
+    }
+}
+
+.adding-personal-profile__rates-img-1 {
+    background-color: @special-orange;
+    color: @basic-white;
+}
+
+.adding-personal-profile__rates-img-2 {
+    background-color: @special-yellow-dark;
+    color: @basic-white;
+}
+
+.adding-personal-profile__rates-img-3 {
+    background-color: @basic-yellow;
+    color: @basic-white;
+}
+
+.adding-personal-profile__show-business-rates-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+
+    display: block;
+    margin: 0 auto;
+
+    color: @special-blue;
+    text-decoration: none;
+
+    position: relative;
+    cursor: pointer;
+
+    &:hover{
+      color: rgba(@special-blue, 0.7);
+    }
+
+    &:active{
+      color: rgba(@special-blue, 0.3);
+    }
+
+    @media (min-width: @tablet-width) {
+        font-size: 20px;
+        line-height: 20px;
+        margin: 0 auto;
+
+        width: 566px;
+        display: block;
+        padding-left: 89px;
+
+        &::before{
+          position: absolute;
+          top: -25px;
+          left: 0px;
+          content: "";
+          width: 68px;
+          height: 68px;
+          background-color: @light-background-color-2;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+    }
+
+    @media(min-width: @desktop-width) {
+        text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 0px;
+
+        &::before {
+          top: -25px;
+          left: 0px;
+        }
+    }
+}
+
+.adding-personal-profile__show-business-rates-button svg {
+  display: none;
+  @media (min-width: @tablet-width){
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: 20px;
+    content: "";
+    width: 27px;
+    height: 27px;
+    fill: @special-blue
+  }
+
+}
+
+.adding-personal-profile__show-business-rates-button:hover svg{
+fill: rgba(@special-blue, 0.7);
+}
+
+.adding-personal-profile__show-business-rates-button:active svg{
+  fill: rgba(@special-blue, 0.3);
+}
