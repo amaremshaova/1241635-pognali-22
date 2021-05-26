@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>HTML Academy: Погнали</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body class="page-body">
         <svg style="display: none">
@@ -226,7 +226,7 @@
             </nav>
         </header>
 
-        <main class="page-user wrapper">
+        <main class="page-user page-form">
             <div class="page-user__title-wrapper">
                 <h1 class="page-user__title">Направления</h1>
             </div>
@@ -362,7 +362,7 @@
                                         <button class="step-1__reduce-button" type="button">
                                             <span class="visually-hidden">Кнопка для уменьшения на 1 попутчика</span>
                                         </button>
-                                        <input id="step-1__number-travel-companions-input" class="step-1__input">
+                                        <input id="step-1__number-travel-companions-input" class="step-1__input" value="2">
                                         <button class="step-1__increase-button" type="button">
                                             <span class="visually-hidden">Кнопка для увеличения на 1 попутчика</span>
                                         </button>
@@ -377,7 +377,7 @@
                                         <button class="step-1__reduce-button" type="button">
                                             <span class="visually-hidden">Кнопка для уменьшения на 1 попутчика</span>
                                         </button>
-                                        <input id="step-1__number-days-input" class="step-1__input">
+                                        <input id="step-1__number-days-input" class="step-1__input" value="2">
                                         <button class="step-1__increase-button" type="button">
                                             <span class="visually-hidden">Кнопка для увеличения на 1 попутчика</span>
                                         </button>
@@ -386,7 +386,7 @@
 
                                 <div class="step-1__with-children-wrapper">
                                     <input
-                                        disabled="disabled"
+
                                         checked="checked"
                                         type="checkbox"
                                         id="step-1__with-children-checkbox"
@@ -394,19 +394,19 @@
 
                                     <label for="step-1__with-children-checkbox" class="step-1__with-children-label">
                                         Можно с детьми
-
-                                        <svg
-                                            width="11"
-                                            height="12"
-                                            viewbox="0 0 11 12"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M3.38673 11.1809L-6.10352e-05 7.5V7V6C-6.10352e-05 6.04093 -6.10352e-05 5.95907 -6.10352e-05 6C-6.10352e-05 5.78516 8.53837e-06 5.5 8.53837e-06 5.5V4.5L3.3773 7.75615C3.49308 7.87756 3.68155 7.87614 3.79732 7.75474L11 0V2.07271V3C11 3.5 11 3.5 11 3.5L4.80833 10.1208L4.80968 10.1222L3.80675 11.1795C3.69097 11.3009 3.5025 11.3009 3.38673 11.1809Z"
-                                                fill="#161C35"/>
-                                        </svg>
-
                                     </label>
+
+                                    <svg
+                                    class="step-1__check-icon"
+                                        width="11"
+                                        height="12"
+                                        viewbox="0 0 11 12"
+
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.38673 11.1809L-6.10352e-05 7.5V7V6C-6.10352e-05 6.04093 -6.10352e-05 5.95907 -6.10352e-05 6C-6.10352e-05 5.78516 8.53837e-06 5.5 8.53837e-06 5.5V4.5L3.3773 7.75615C3.49308 7.87756 3.68155 7.87614 3.79732 7.75474L11 0V2.07271V3C11 3.5 11 3.5 11 3.5L4.80833 10.1208L4.80968 10.1222L3.80675 11.1795C3.69097 11.3009 3.5025 11.3009 3.38673 11.1809Z"
+                                           />
+                                    </svg>
                                 </div>
 
                                 <div class="calender ">
@@ -424,11 +424,11 @@
                                         <caption class="visually-hidden">Календарь</caption>
                                         <tbody class="calender__table-container">
                                             <tr class="calender__table-header calender__table-header--mobile ">
-                                                <th class="calender__table-item">П</th>
-                                                <th class="calender__table-item">В</th>
-                                                <th class="calender__table-item">С</th>
-                                                <th class="calender__table-item">Ч</th>
-                                                <th class="calender__table-item">П</th>
+                                                <th class="calender__table-item ">П</th>
+                                                <th class="calender__table-item ">В</th>
+                                                <th class="calender__table-item ">С</th>
+                                                <th class="calender__table-item ">Ч</th>
+                                                <th class="calender__table-item ">П</th>
                                                 <th
                                                     class="calender__table-item
                                                     calender__table-item--red">С</th>
@@ -452,52 +452,52 @@
                                             </tr>
 
                                             <tr class="calender__table-row">
-                                                <td class="calender__table-item">23</td>
-                                                <td class="calender__table-item">24</td>
-                                                <td class="calender__table-item">25</td>
-                                                <td class="calender__table-item">26</td>
-                                                <td class="calender__table-item">27</td>
-                                                <td class="calender__table-item">28</td>
-                                                <td class="calender__table-item">1</td>
+                                                <td class="calender__table-item calender__table-item--disabled">23</td>
+                                                <td class="calender__table-item calender__table-item--disabled">24</td>
+                                                <td class="calender__table-item calender__table-item--disabled">25</td>
+                                                <td class="calender__table-item calender__table-item--disabled">26</td>
+                                                <td class="calender__table-item calender__table-item--disabled">27</td>
+                                                <td class="calender__table-item calender__table-item--disabled">28</td>
+                                                <td class="calender__table-item calender__table-item--disabled">1</td>
 
                                             </tr>
                                             <tr class="calender__table-row">
-                                                <td class="calender__table-item">2</td>
-                                                <td class="calender__table-item">3</td>
-                                                <td class="calender__table-item">4</td>
-                                                <td class="calender__table-item">5</td>
-                                                <td class="calender__table-item">6</td>
-                                                <td class="calender__table-item">7</td>
-                                                <td class="calender__table-item">8</td>
+                                                <td class="calender__table-item calender__table-item--disabled">2</td>
+                                                <td class="calender__table-item calender__table-item--disabled">3</td>
+                                                <td class="calender__table-item calender__table-item--disabled">4</td>
+                                                <td class="calender__table-item calender__table-item--disabled">5</td>
+                                                <td class="calender__table-item calender__table-item--disabled">6</td>
+                                                <td class="calender__table-item calender__table-item--disabled">7</td>
+                                                <td class="calender__table-item calender__table-item--disabled">8</td>
 
                                             </tr>
                                             <tr class="calender__table-row">
-                                                <td class="calender__table-item">9</td>
-                                                <td class="calender__table-item">10</td>
-                                                <td class="calender__table-item">11</td>
-                                                <td class="calender__table-item">12</td>
-                                                <td class="calender__table-item">13</td>
-                                                <td class="calender__table-item">14</td>
-                                                <td class="calender__table-item">15</td>
+                                                <td class="calender__table-item calender__table-item--disabled">9</td>
+                                                <td class="calender__table-item calender__table-item--disabled">10</td>
+                                                <td class="calender__table-item calender__table-item--disabled">11</td>
+                                                <td class="calender__table-item calender__table-item--disabled">12</td>
+                                                <td class="calender__table-item calender__table-item--disabled">13</td>
+                                                <td class="calender__table-item calender__table-item--disabled">14</td>
+                                                <td class="calender__table-item calender__table-item--disabled">15</td>
 
                                             </tr>
                                             <tr class="calender__table-row">
-                                                <td class="calender__table-item">16</td>
-                                                <td class="calender__table-item">17</td>
-                                                <td class="calender__table-item">18</td>
-                                                <td class="calender__table-item">19</td>
-                                                <td class="calender__table-item">20</td>
-                                                <td class="calender__table-item">21</td>
-                                                <td class="calender__table-item">22</td>
+                                                <td class="calender__table-item calender__table-item--disabled">16</td>
+                                                <td class="calender__table-item calender__table-item--disabled">17</td>
+                                                <td class="calender__table-item calender__table-item--disabled">18</td>
+                                                <td class="calender__table-item calender__table-item--disabled">19</td>
+                                                <td class="calender__table-item calender__table-item--disabled">20</td>
+                                                <td class="calender__table-item calender__table-item--disabled">21</td>
+                                                <td class="calender__table-item calender__table-item--disabled">22</td>
 
                                             </tr>
                                             <tr class="calender__table-row">
-                                                <td class="calender__table-item">23</td>
-                                                <td class="calender__table-item">24</td>
-                                                <td class="calender__table-item">24</td>
+                                                <td class="calender__table-item calender__table-item--disabled">23</td>
+                                                <td class="calender__table-item calender__table-item--disabled">24</td>
+                                                <td class="calender__table-item calender__table-item--disabled">24</td>
                                                 <td
-                                                    class=" calender__table-item--cursor calender__table-item
-                                calender__table-item--selected
+                                                    class="  calender__table-item
+                                calender__table-item--selected calender__table-item--cursor
                                ">26</td>
                                                 <td
                                                     class="calender__table-item
@@ -556,17 +556,19 @@
                             <form class="step-2__form">
                                 <div class="step-2__option-container">
 
+                                  <div class="step-2__select-container">
                                     <select class="step-2__counties-select">
                                         <option>Босния и Герцеговина</option>
                                     </select>
+                                  </div>
 
                                     <div class="step-2__flag-container">
                                         <picture >
                                             <source
                                                 media="(min-width: 768px)"
-                                                srcset="img/index/flags/bosnia-and-herzegovina-flag-tablet.png 1x">
+                                                srcset="img/catalog/flags/bosnia-and-herzegovina-flag-tablet.png 1x">
                                             <img
-                                                src="img/index/flags/bosnia-and-herzegovina-flag.png"
+                                                src="img/catalog/flags/bosnia-and-herzegovina-flag-mobile.png"
                                                 width="35"
                                                 height="24"
                                                 alt="Флаг Боснии и Герцеговины">
@@ -579,15 +581,17 @@
                                 </div>
 
                                 <div class="step-2__option-container">
+                                  <div class="step-2__select-container">
                                     <select class="step-2__counties-select">
                                         <option>Чехия</option>
                                     </select>
+                                    </div>
                                     <div class="step-2__flag-container">
                                         <source
                                             media="(min-width: 768px)"
-                                            srcset="img/index/flags/сzech-flag-tablet.png 1x">
+                                            srcset="img/catalog/flags/сzech-flag-tablet.png 1x">
                                         <img
-                                            src="img/index/flags/czech-flag-mobile.png"
+                                            src="img/catalog/flags/czech-flag-mobile.png"
                                             width="35"
                                             height="24"
                                             alt="Флаг Чехии">
@@ -598,12 +602,13 @@
                                 </div>
 
                                 <div class="step-2__choose-country">
-                                    <button class="step-2__counties-select step-2__counties-select-new">
+                                    <button class="step-2__counties-select-new
+                                    ">
                                         Выберите страну
+                                        <span></span>
                                     </button>
 
                                     <div class="choose-country">
-
                                         <button class="choose-country__exit" type="button">
                                             <span class="visually-hidden">Закрыть</span>
                                         </button>
@@ -771,6 +776,7 @@
                             <p class="step-3__text">Наконец, расскажите о своих планах времяпровождения.
                                 Можно писать в свободной форме и ставить тэги.</p>
                             <form class="step-3__form">
+                              <div class="step-3__form-item">
                               <div class="step-3__entertainments-label-container">
                                 <label
                                     class="step-3__entertainments-label
@@ -782,17 +788,17 @@
                                           media="(min-width: 768px)"
                                           srcset="img/index/flags/bosnia-and-herzegovina-flag-tablet.png">
                                       <img
-                                          src="img/index/flags/bosnia-and-herzegovina-flag-mobile.png"
+                                          src="img/catalog/flags/bosnia-and-herzegovina-flag-mobile.png"
                                           width="35"
                                           height="24"
-                                          alt="Флаг Чехии">
+                                          alt="Флаг Боснии и Герцеговины">
                                           </picture>
                                         </div>
-
-
                                 <textarea
                                     class="step-3__entertainments-text"
                                     id="step-3__entertainments-text-1">План действий</textarea>
+                                  </div>
+
 
                                 <div class="step-3__entertainments-label-container">
                                     <label
@@ -825,8 +831,8 @@
                 </div>
             </section>
 
-            <footer class="page-footer index-footer">
-              <div class="page-footer__social-copyright-wrapper">
+            <footer class="page-footer index-footer ">
+              <div class="page-footer__social-copyright-wrapper form-footer__social-copyright-wrapper">
 
                   <div class="page-footer__logo">
                       <picture>

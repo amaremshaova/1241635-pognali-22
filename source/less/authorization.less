@@ -16,13 +16,17 @@
     width: 270px;
     margin: 0 auto;
 
+
     @media(min-width: @tablet-width) {
-        padding: 129px 76px 60px;
+      box-sizing: border-box;
+      width: 688px;
+        padding: 129px 37px 60px;
     }
 
 
     @media(min-width: @desktop-width){
-      padding: 163px 132px 100px;
+      width: 1177px;
+      padding: 163px 0px 100px;
     }
 }
 
@@ -43,6 +47,7 @@
     margin-bottom: 33px;
 
     @media(min-width: @tablet-width) {
+      width: auto;
         margin: 0 0 68px -19px;
         font-size: 28px;
         line-height: 32px;

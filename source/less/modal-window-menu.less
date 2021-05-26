@@ -17,6 +17,11 @@
     padding: 114px 25px 41px;
     width: 270px;
     margin: 0 auto;
+
+    @media (min-width: @tablet-width){
+  width: 688px;
+  box-sizing: border-box;
+    }
 }
 
 .modal-window-menu__list {
@@ -25,8 +30,10 @@
     padding: 0;
     margin: 0 0 44px;
 
-    @media (min-width: @desktop-width) {
-        }
+    @media (min-width: @tablet-width) {
+      text-align: left;
+    }
+
 }
 
 .modal-window-menu__item a {
@@ -48,6 +55,12 @@
 
     &:active{
       color: rgba(@basic-yellow, 0.3);
+    }
+
+    @media (min-width: @tablet-width){
+      font-weight: 500;
+font-size: 60px;
+line-height: 71px;
     }
   }
 

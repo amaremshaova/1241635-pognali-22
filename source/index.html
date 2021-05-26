@@ -7,7 +7,7 @@
         <link rel="icon" href="favicon.ico">
         <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="img/favicon/apple.png">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body class="page-body">
 
@@ -838,7 +838,7 @@
                         Проложить маршрут</a>
                 </section>
 
-                <div class="index-footer__map" id="yandex-map">
+                <div class="index-footer__map" >
                     <div class="index-footer__map-static">
                         <picture class="index-footer__map-static-wrapper">
                             <source
@@ -854,14 +854,16 @@
                                 height="424"
                                 alt="Карта">
                         </picture>
+
+                        <div class="index-footer__yandex-map" id="yandex-map"></div>
                     </div>
                 </div>
 
-                <div class="page-footer__social-copyright-wrapper">
-
+                <div class="page-footer__social-copyright-wrapper index-footer__social-copyright-wrapper">
                     <div class="page-footer__logo">
                         <picture>
                             <source media="(min-width: 1440px)" srcset="img/logo-blue-desktop.png 1x">
+                            <source media="(min-width: 768px)" srcset="img/logo-blue-tablet.png 1x">
                             <img
                                 class="logo-img"
                                 src="img/logo-blue-mobile.png"

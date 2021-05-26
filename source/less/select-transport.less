@@ -1,14 +1,19 @@
 .select-transport {
-   /* width: 270px;
-   /* height: 58px;*/
+   width: 270px;
+   height: 63px;
+   box-sizing: border-box;
 
+   border: 1px solid @border-textarea-color;
     border-radius: 10px;
     display: flex;
+    margin: 0 auto;
 
     @media (min-width: @tablet-width) {
         order: 2;
-
-        margin-top: -6px;
+        margin-left: 51px;
+        margin-top: 1px;
+        width: 309px;
+    height: 94px;
     }
 }
 
@@ -16,7 +21,8 @@
     display: flex;
     justify-content: center;
     padding: 12px 10px 10px;
-
+    margin: 0 auto;
+    margin-top: 2px;
     position: relative;
 }
 
@@ -24,7 +30,7 @@
 
     position: absolute;
     top: -11px;
-    left: 88px;
+    left: 27px;
     width: 90px;
     height: 15px;
     background-color: @special-blue-light;
@@ -39,9 +45,10 @@
         font-size: 20px;
         line-height: 20px;
         top: 80px;
-        left: 88px;
+        left: 15px;
         width: 90px;
         height: 15px;
+        letter-spacing: 0.08em;
     }
 }
 
@@ -49,6 +56,8 @@
   position: relative;
   width: 31px;
   height: 31px;
+  background-color: @basic-white;
+  border-radius: 50%;
 }
 
 .select-transport__checkbox {

@@ -28,11 +28,13 @@
     }
 
     @media (min-width: @desktop-width) {
+        width:1320px;
         display: grid;
-        padding: 237px 51px 139px;
+
         grid-template-columns: 560px auto;
         grid-template-areas: "cards title-text" "cards btn-all-show";
         grid-template-rows: 440px auto;
+        padding: 243px 51px 135px;
 
 
     }
@@ -51,11 +53,12 @@
         width: 616px;
         margin-bottom: 42px;
     }
+
     @media (min-width: @desktop-width) {
-      margin-bottom: 0;
+
+        margin-bottom: 0;
         order: 2;
-        margin-left: 250px;
-        margin-top: 4px;
+        margin-left: 243px;
         grid-area: title-text;
     }
 }
@@ -94,6 +97,7 @@
     @media (min-width: @desktop-width) {
         margin-right: 178px;
         margin-left: 0;
+        width: 351px;
     }
 
 }
@@ -129,11 +133,12 @@
 
     @media (min-width: @desktop-width) {
         order: 1;
-        margin-left: 80px;
+        margin-left: 71px;
         width: 559px;
         grid-area: cards;
         position: relative;
         z-index: 10;
+
 
         &::before {
             content: "";
@@ -246,7 +251,6 @@
         flex-wrap: wrap;
         margin-right: 124px;
         padding: 0;
-
     }
 
     @media (min-width: @desktop-width) {
@@ -288,11 +292,11 @@
     }
 
     @media (min-width: @desktop-width) {
-        margin-top: 41px;
+      margin-top: 38px;
 
         display: flex;
         flex-wrap: wrap;
-        width: 215px;
+        width: 214px;
     }
 
 }
@@ -331,7 +335,7 @@
 
     @media (min-width: @desktop-width) {
         width: 100%;
-        margin-top: -18px;
+        margin-top: 4px;
     }
 }
 
@@ -364,9 +368,7 @@
 
     @media (min-width: @desktop-width) {
         margin-left: 31px;
-        margin-top: 4px;
-
-
+        margin-top: 0;
 
         &::before {
             content: "";
@@ -435,8 +437,8 @@
         height: 80px;
         order: 2;
         grid-area: btn-all-show;
-        margin-top: -68px;
-        margin-left: 253px;
+        margin-top: -71px;
+        margin-left: 243px;
         box-sizing: border-box;
 
         padding: 28px 31.81px 27px 32.73px;
