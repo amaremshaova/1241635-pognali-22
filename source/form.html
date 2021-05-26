@@ -273,7 +273,7 @@
                         <div class="select-transport__wrapper">
                             <div class="select-transport__label">ТРАНСПОРТ</div>
                             <div class="select-transport__container">
-                                <input class="select-transport__checkbox" type="checkbox" opacity="0">
+                                <input class="select-transport__checkbox" type="checkbox">
                                 <label class="visually-hidden">Выбор самолета в качестве транспорта для путешествий</label>
                                 <svg class="select-transport__icon" width="21" height="23">
                                     <use xlink:href="#icon-plane"></use>
@@ -370,7 +370,7 @@
                                 </div>
 
                                 <div class="step-1__duration">
-                                    <label class=" step-1__label" for="step-1__number-days-input ">Длительность
+                                    <label class=" step-1__label">Длительность
                                         <span>дн.</span>
                                     </label>
                                     <div class="step-1__number-days-container">
@@ -587,14 +587,16 @@
                                     </select>
                                     </div>
                                     <div class="step-2__flag-container">
+                                      <picture>
                                         <source
                                             media="(min-width: 768px)"
-                                            srcset="img/catalog/flags/сzech-flag-tablet.png 1x">
+                                            srcset="img/catalog/flags/czech-flag-tablet.png 1x">
                                         <img
                                             src="img/catalog/flags/czech-flag-mobile.png"
                                             width="35"
                                             height="24"
                                             alt="Флаг Чехии">
+                                          </picture>
                                     </div>
                                     <button type="button" class="step-2__delete-button">
                                         <span class="visually-hidden">Удалить</span>
@@ -786,7 +788,7 @@
                                     <picture>
                                       <source
                                           media="(min-width: 768px)"
-                                          srcset="img/index/flags/bosnia-and-herzegovina-flag-tablet.png">
+                                          srcset="img/catalog/flags/bosnia-and-herzegovina-flag-tablet.png">
                                       <img
                                           src="img/catalog/flags/bosnia-and-herzegovina-flag-mobile.png"
                                           width="35"
@@ -808,14 +810,15 @@
                                     <picture>
                                         <source
                                             media="(min-width: 768px)"
-                                            srcset="img/index/flags/czech-flag-tablet.png">
+                                            srcset="img/catalog/flags/czech-flag-tablet.png">
                                         <img
-                                            src="img/index/flags/czech-flag-mobile.png"
+                                            src="img/catalog/flags/czech-flag-mobile.png"
                                             width="35"
                                             height="24"
                                             alt="Флаг Чехии">
+                                          </picture>
                                     </div>
-                                </picture>
+
                                 <textarea
                                     class="step-3__entertainments-text"
                                     id="step-3__entertainments-text-2">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
@@ -826,11 +829,11 @@
                                     <a class="prev-step-button" href="#">На шаг назад</a>
                                 </div>
                             </form>
+                            </div>
                         </section>
-                    </div>
-                </div>
-            </section>
+                        </div>
 
+                        </section>
             <footer class="page-footer index-footer ">
               <div class="page-footer__social-copyright-wrapper form-footer__social-copyright-wrapper">
 
@@ -892,6 +895,7 @@
                           </a>
                       </div>
                   </section>
+                  </div>
               </footer>
         </main>
         <script src="js/choose-country.js"></script>
